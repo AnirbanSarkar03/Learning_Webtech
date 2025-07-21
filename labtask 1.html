@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <header>
+        <h3 style="color:red ;">Donor Information</h3>
+    </header>
+
+    <main>
+        
+        <form action="/submit_pahe.php" method="post">
+
+            <label for="fname"><b style="color:red">*</b><b>First name:</b></label>
+            <input type="text" id="fname" name="fname" ><br>
+
+            <label for="lname"><b style="color:red">*</b><b>Last name:</b></label>
+            <input type="text" id="lname" name="lname" ><br>
+
+            <label for="cname"><b>Company:</b></label>
+            <input type="text" id="cname" name="cname" ><br>
+
+            <label for="aname"><b style="color:red">*</b><b>Address 1:</b></label>
+            <input type="text" id="aname" name="aname" ><br>
+
+            <label for="aaname"><b>Address 2:</b></label>
+            <input type="text" id="aaname" name="aaname" ><br>
+
+            <label for="ccname"><b style="color:red">*</b><b>City:</b></label>
+            <input type="text" id="ccname" name="ccname" ><br>
+
+            <label for="rname"><b style="color:red">*</b><b>State:</b></label>
+            <select id="rname">
+                 <option value="select a state">Select a state</option>
+                <option>Rajshahi</option>
+                 <option>Dhaka</option>
+                  <option>Sylhet</option>
+                   <option>Mymensingh</option>
+                    <option>Chittagong</option>
+                     <option>Khulna</option>
+                      <option>Rangpur</option>
+                    
+            </select><br>
+
+            <label for="zname"><b style="color:red">*</b><b>Zipcode:</b></label>
+            <input type="text" id="zname" name="zname" ><br>
+
+            <label for=countryname"><b style="color:red">*</b><b>Country:</b></label>
+            <select id="countryname">
+                 <option value="select a state">Select the country</option>
+                <option>Bangladesh</option>
+                 <option>India</option>
+                  <option>Pakistan</option>
+                   <option>Nepal</option>
+                   
+            </select><br>
+
+            <label for="phonenumber"><b>Phone:</b></label>
+            <input type="text" id="phonenumber" name="phonenumber" ><br>
+
+            <label for="faxadd"><b>Fax:</b></label>
+            <input type="text" id="faxadd" name="faxadd" ><br>
+
+            <label for="emailadd"><b style="color:red">*</b><b>Email:</b></label>
+            <input type="text" id="emailadd" name="emailadd" ><br>
+
+            <label for="donationamount"><b style="color:red">*</b><b>Donation Amount:</b></label>
+              
+              <input type="radio" id="dname1" name="dname" value="None">
+              <label for="dname1"><b>None</b></label>
+
+              <input type="radio" id="dname2" name="dname"  value="$50:">
+              <label for="dname2"><b>$50</b></label>
+
+              <input type="radio" id="dname3" name="dname"  value="$100:">
+              <label for="dname3"><b>$100</b></label>
+
+              <input type="radio" id="dname4" name="dname"  value="$250:">
+              <label for="dname4"><b>$250</b></label>
+
+              <input type="radio" id="dname5" name="dname"  value="others">
+              <label for="dname5"><b>Others</b></label>
+
+    
+            <label for="otheramount" ><pre style="color:rgb(227, 95, 244)">(Check a button or type your amount)</pre> <b>Other amount:</b></label>
+            <input type="text" id="otheramount"><br>
+
+            <label for="recurringdonation"><b>Recurring Donation:</b></label>
+            <input type="checkbox" id="recurringdonation"> I am interested in giving on a regular basis<br>
+
+           <pre style="color:rgb(38, 173, 240)">Monthly Credit Card $ <input type="text"> for <input type="text"> Months </pre>
+           
+        </form>
+
+        
+    </main>
+
+    <footer></footer>
+</body>
+</html>
