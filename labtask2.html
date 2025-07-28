@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            text-align:left;
+        }
+        header{
+            text-align:center;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 style="color:red ;">Donor Information</h2>
+    </header>
+
+    <main>
+        
+        <form action="/submit_pahe.php" method="post">
+
+            <label for="fname"><b style="color:red">*</b><b>First name:</b></label>
+            <input type="text" id="fname" name="fname"size="40"><br>
+
+            <label for="lname"><b style="color:red">*</b><b>Last name:</b></label>
+            <input type="text" id="lname" name="lname" ><br>
+
+            <label for="cname"><b>Company:</b></label>
+            <input type="text" id="cname" name="cname" ><br>
+
+            <label for="aname"><b style="color:red">*</b><b>Address 1:</b></label>
+            <input type="text" id="aname" name="aname" ><br>
+
+            <label for="aaname"><b>Address 2:</b></label>
+            <input type="text" id="aaname" name="aaname" ><br>
+
+            <label for="ccname"><b style="color:red">*</b><b>City:</b></label>
+            <input type="text" id="ccname" name="ccname" ><br>
+
+            <label for="rname"><b style="color:red">*</b><b>State:</b>
+            <select id="rname">
+                 <option value="select a state">Select a state</option>
+                <option>Rajshahi</option>
+                 <option>Dhaka</option>
+                  <option>Sylhet</option>
+                   <option>Mymensingh</option>
+                    <option>Chittagong</option>
+                     <option>Khulna</option>
+                      <option>Rangpur</option>
+                    
+            </select></label><br>
+
+            <label for="zname"><b style="color:red">*</b><b>Zipcode:</b></label>
+            <input type="text" id="zname" name="zname" ><br>
+
+            <label for=countryname"><b style="color:red">*</b><b>Country:</b></label>
+            <select id="countryname">
+                 <option value="select a state">Select the country</option>
+                <option>Bangladesh</option>
+                 <option>India</option>
+                  <option>Pakistan</option>
+                   <option>Nepal</option>
+                   
+            </select><br>
+
+            <label for="phonenumber"><b>Phone:</b></label>
+            <input type="text" id="phonenumber" name="phonenumber" ><br>
+
+            <label for="faxadd"><b>Fax:</b></label>
+            <input type="text" id="faxadd" name="faxadd" ><br>
+
+            <label for="emailadd"><b style="color:red">*</b><b>Email:</b></label>
+            <input type="text" id="emailadd" name="emailadd" ><br>
+
+            <label for="donationamount"><b style="color:red">*</b><b>Donation Amount:</b></label>
+              
+              <input type="radio" id="dname1" name="dname" value="None">
+              <label for="dname1">None</label>
+
+              <input type="radio" id="dname2" name="dname"  value="$50:">
+              <label for="dname2">$50</label>
+
+              <input type="radio" id="dname3" name="dname"  value="$100:">
+              <label for="dname3">$100</label>
+
+              <input type="radio" id="dname4" name="dname"  value="$250:">
+              <label for="dname4">$250</label>
+
+              <input type="radio" id="dname5" name="dname"  value="others">
+              <label for="dname5">Others</label>
+
+    
+            <label for="otheramount" ><pre style="color:rgb(227, 95, 244)">(Check a button or type your amount)</pre> <b>Other amount:</b></label>
+            <input type="text" id="otheramount"><br>
+
+            <label for="recurringdonation"><b>Recurring Donation:</b></label>
+            <input type="checkbox" id="recurringdonation"> I am interested in giving on a regular basis<br>
+
+           <pre style="color:rgb(38, 173, 240)">Monthly Credit Card $ <input type="text"> for <input type="text"> Months </pre>
+
+           <h2 style="color:red">Honorarium and Memorial Donation Information</h2>
+
+           <!-- <pre><b>I would like to make this donation</b></pre> -->
+           <label for="honor1"><b>I would like to make this donation:</b>
+           <input type="radio" value="To Honor" name="Honor" id="honor1" >To Honor
+           </label>
+
+           <label for="honor2">
+           <input type="radio" value="In Memoray Of" name="Honor" id="honor2">In Memory Of
+           </label><br><br>
+
+           <label for="name1"><b>Donor Name:</b>
+           <input type="text" id="name1">
+           </label><br>
+
+            <label for="name2"><b>Acknowladge Donation to:</b>
+           <input type="text" id="name2">
+           </label><br>
+
+           <label for="name3"><b>Donor Address:</b>
+           <input type="text" id="name3">
+           </label><br>
+
+           <label for="name3"><b>Address:</b>
+           <input type="text" id="name3">
+           </label><br>
+
+           <label for="name4"><b>City:</b>
+           <input type="text" id="name3">
+           </label><br>
+
+           <label for="name5"><b>State:</b>
+            <select id="name5" placeholder="select a state">
+                <option value="Select">Select a state</option>
+                <option value="Rajshahi">Rajshahi</option>
+                 <option value="Dhaka">Dhaka</option>
+                  <option value="Sylhet">Sylhet</option>
+                   <option value="Sylhet">Mymensingh</option>
+                    <option vlaue="Chittagong">Chittagong</option>
+                     <option value="Khulna">Khulna</option>
+                      <option vlaue="Rangpur">Rangpur</option>
+                    
+            </select></label><br>
+
+            <label for="zipcode"><b>Zipcode:</b>
+                <input type="text" id="zipcode">
+            </label>
+
+            <h2 style="color:red">Additional Information</h2>
+            <label for="pname">Please enter your name,company or organization as you would like it to appear in our publication:<br>
+                <b>Name  </b>
+                <input type="text" id="pname">
+            </label><br><br>
+
+            <label for="cb1">
+                <input type="checkbox" id="cb1">I would like my gift to remain anynymous.
+            </label><br>
+
+            <label for="cb2">
+                <input type="checkbox" id="cb2">My employer offer a matching gift program. I will mail the matching gift form.
+            </label><br>
+
+            <label for="cb3">
+                <input type="checkbox" id="cb3">Please save the cost of acknowledging this gift by not mailing a thank you letter.
+            </label>
+            <br><br>
+
+            <label for="comments1"><b>Comments</b><br>
+                <textarea name="feedback" id="comment1" rows="5" placeholder="(Please type any question or feedback here) "></textarea> </label><br><br>
+
+                <label for="cbs1"><b>How may we contract you?</b><br>
+                <input type="checkbox" id="cbs1">E-mail
+            </label>
+
+             <label for="cbs2">
+                <input type="checkbox" id="cbs2">Postal mail
+            </label>
+
+             <label for="cbs3">
+                <input type="checkbox" id="cbs3">Telephone
+            </label>
+
+             <label for="cbs4">
+                <input type="checkbox" id="cbs4">Fax
+            </label><br><br>
+
+             <label for="cbm1">I would like to receive newsletter and information about special events by:<br>
+                <input type="checkbox" id="cbm1">E-mail
+            </label>
+
+             <label for="cbm1">
+                <input type="checkbox" id="cbm1">Postal mail
+            </label><br><br>
+
+             <label for="cbn1">
+                <input type="checkbox" id="cbs1">I would like information about volunteering with the(_____________)
+            </label><br>
+
+            <label for="button1">
+                <button type="button" id="button1">Reset</button>
+            </label>
+
+            <label for="button2">
+                <button type="button" id="button2">Continue</button>
+            </label><br><br>
+
+            <img height="15" src="https://www.oclc.org/content/marketing/publish/en_us/trust/security/jcr%3Acontent/hero_area/parsyscolumncontrol_/col0/parsyscolumncontrol/col0/parsyscolumncontrol/col1/image.img.png/1686837674374.png"> Donate online with confidence. You are on secure server.<br><br>
+            If you have any problems or questions,please contact <pre style="color:lightgray">support</p>
+
+
+
+           
+           
+        </form>
+
+        
+    </main>
+
+    <footer></footer>
+</body>
+</html>
