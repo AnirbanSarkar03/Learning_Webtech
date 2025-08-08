@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            background-color: aliceblue;
+            text-align: left;
+        }
+        header {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h2 style="color:red;">Donor Information</h2>
+    </header>
+
+    <main>
+        <form id="donationForm" action="/submit_page.php" method="post">
+
+            <label for="fname"><b style="color:red">*</b><b>First name:</b></label>
+            <input type="text" id="fname" name="fname" size="20"><br>
+
+            <label for="lname"><b style="color:red">*</b><b>Last name:</b></label>
+            <input type="text" id="lname" name="lname"><br>
+
+            <label for="cname"><b>Company:</b></label>
+            <input type="text" id="cname" name="cname"><br>
+
+            <label for="aname"><b style="color:red">*</b><b>Address 1:</b></label>
+            <input type="text" id="aname" name="aname"><br>
+
+            <label for="password"><b style="color:red">*</b><b>Password:</b></label>
+            <input type="password" id="password" name="password"><br>
+
+            <label for="aaname"><b>Address 2:</b></label>
+            <input type="text" id="aaname" name="aaname"><br>
+
+            <label for="ccname"><b style="color:red">*</b><b>City:</b></label>
+            <input type="text" id="ccname" name="ccname"><br>
+
+            <label for="rname"><b style="color:red">*</b><b>State:</b></label>
+            <select id="rname">
+                <option value="select a state">Select a state</option>
+                <option>Rajshahi</option>
+                <option>Dhaka</option>
+                <option>Sylhet</option>
+                <option>Mymensingh</option>
+                <option>Chittagong</option>
+                <option>Khulna</option>
+                <option>Rangpur</option>
+            </select><br>
+
+            <label for="zname"><b style="color:red">*</b><b>Zipcode:</b></label>
+            <input type="text" id="zname" name="zname"><br>
+
+            <label for="countryname"><b style="color:red">*</b><b>Country:</b></label>
+            <select id="countryname">
+                <option value="select a state">Select the country</option>
+                <option>Bangladesh</option>
+                <option>India</option>
+                <option>Pakistan</option>
+                <option>Nepal</option>
+            </select><br>
+
+            <label for="emailadd"><b style="color:red">*</b><b>Email:</b></label>
+            <input type="text" id="emailadd" name="emailadd"><br>
+
+            <label for="donationamount"><b style="color:red">*</b><b>Donation Amount:</b></label><br>
+            <input type="radio" id="dname1" name="dname" value="None"><label for="dname1">None</label>
+            <input type="radio" id="dname2" name="dname" value="$50"><label for="dname2">$50</label>
+            <input type="radio" id="dname3" name="dname" value="$100"><label for="dname3">$100</label>
+            <input type="radio" id="dname4" name="dname" value="$250"><label for="dname4">$250</label>
+            <input type="radio" id="dname5" name="dname" value="others"><label for="dname5">Others</label><br>
+
+            <label for="otheramount"><pre style="color:rgb(227, 95, 244)">(Check a button or type your amount)</pre><b>Other amount:</b></label>
+            <input type="text" id="otheramount"><br>
+
+            <label for="recurringdonation"><b>Recurring Donation:</b></label>
+            <input type="checkbox" id="recurringdonation"> I am interested in giving on a regular basis<br>
+
+            <pre style="color:rgb(38, 173, 240)">Monthly Credit Card $ <input type="text"> for <input type="text"> Months </pre>
+
+            <h2 style="color:red">Honorarium and Memorial Donation Information</h2>
+
+            <label><b>I would like to make this donation:</b></label>
+            <input type="radio" value="To Honor" name="Honor" id="honor1">To Honor
+            <input type="radio" value="In Memory Of" name="Honor" id="honor2">In Memory Of<br><br>
+
+            <label for="name1"><b>Donor Name:</b></label>
+            <input type="text" id="name1"><br>
+
+            <label for="name2"><b>Acknowledge Donation to:</b></label>
+            <input type="text" id="name2"><br>
+
+            <label for="name3"><b>Donor Address:</b></label>
+            <input type="text" id="name3"><br>
+
+            <label for="name4"><b>City:</b></label>
+            <input type="text" id="name4"><br>
+
+            <label for="name5"><b>State:</b></label>
+            <select id="name5">
+                <option value="Select">Select a state</option>
+                <option value="Rajshahi">Rajshahi</option>
+                <option value="Dhaka">Dhaka</option>
+                <option value="Sylhet">Sylhet</option>
+                <option value="Mymensingh">Mymensingh</option>
+                <option value="Chittagong">Chittagong</option>
+                <option value="Khulna">Khulna</option>
+                <option value="Rangpur">Rangpur</option>
+            </select><br>
+
+            <label for="zipcode"><b>Zipcode:</b></label>
+            <input type="text" id="zipcode"><br>
+
+            <h2 style="color:red">Additional Information</h2>
+
+            <label for="pname">Please enter your name/company/organization as you'd like it to appear in our publication:<br>
+                <b>Name</b>
+                <input type="text" id="pname">
+            </label><br><br>
+
+            <label><input type="checkbox" id="cb1">I would like my gift to remain anonymous.</label><br>
+            <label><input type="checkbox" id="cb2">My employer offers a matching gift program. I will mail the matching gift form.</label><br>
+            <label><input type="checkbox" id="cb3">Please do not mail a thank you letter.</label><br><br>
+
+            <label for="comment1"><b>Comments</b><br>
+                <textarea name="feedback" id="comment1" rows="5" placeholder="(Please type any question or feedback here) "></textarea>
+            </label><br><br>
+
+            <label><b>How may we contact you?</b><br>
+                <input type="checkbox" id="cbs1">E-mail
+                <input type="checkbox" id="cbs2">Postal mail
+                <input type="checkbox" id="cbs3">Telephone
+                <input type="checkbox" id="cbs4">Fax
+            </label><br><br>
+
+            <label>I would like to receive newsletters and info by:<br>
+                <input type="checkbox" id="cbm1">E-mail
+                <input type="checkbox" id="cbm2">Postal mail
+            </label><br><br>
+
+            <label><input type="checkbox" id="cbn1">I would like info about volunteering with the (_____________)</label><br>
+
+           <button type="button" id="button1" style="padding:12px 24px; font-size:18px; background-color:rgb(255, 118, 118); color:rgb(0, 0, 0); border:none; border-radius:8px;">Reset</button>
+           <button type="button" id="button2" style="padding:12px 24px; font-size:18px; background-color:rgb(127, 234, 69); color:rgb(0, 0, 0); border:none; border-radius:8px;">Continue</button><br><br>
+
+
+            <img height="15" src="https://www.oclc.org/content/marketing/publish/en_us/trust/security/jcr%3Acontent/hero_area/parsyscolumncontrol_/col0/parsyscolumncontrol/col0/parsyscolumncontrol/col1/image.img.png/1686837674374.png">
+            Donate online with confidence. You are on secure server.<br><br>
+            If you have any problems or questions, please contact <pre style="color:lightgray">support</pre>
+        </form>
+    </main>
+
+    <footer></footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const continueBtn = document.getElementById("button2");
+
+            continueBtn.addEventListener("click", function () {
+                const fname = document.getElementById("fname").value.trim();
+                const lname = document.getElementById("lname").value.trim();
+                const address = document.getElementById("aname").value.trim();
+                const city = document.getElementById("ccname").value.trim();
+                const state = document.getElementById("rname").value;
+                const zipcode = document.getElementById("zname").value.trim();
+                const country = document.getElementById("countryname").value;
+                const email = document.getElementById("emailadd").value.trim();
+                const password = document.getElementById("password").value.trim();
+                const donationChecked = document.querySelector('input[name="dname"]:checked');
+
+                const nameRegex = /^[A-Za-z\s]+$/;
+                const passwordRegex = /^(?=.*[a-zA-Z])(?=.*\d)(?=.*[^A-Za-z0-9]).{10,}$/;
+
+                if (
+                    fname === "" || lname === "" || address === "" || city === "" ||
+                    zipcode === "" || state === "select a state" || country === "select a state" ||
+                    email === "" || password === "" || !donationChecked
+                ) {
+                    alert("Please fill in all required fields marked with *");
+                    return;
+                }
+
+                if (!nameRegex.test(fname)) {
+                    alert("First name should contain only letters and spaces.");
+                    return;
+                }
+
+                if (!nameRegex.test(lname)) {
+                    alert("Last name should contain only letters and spaces.");
+                    return;
+                }
+
+                if (!nameRegex.test(address)) {
+                    alert("Address 1 should contain only letters and spaces.");
+                    return;
+                }
+
+                if (!passwordRegex.test(password)) {
+                    alert("Password must be at least 10 characters long and include a letter, number, and special character.");
+                    return;
+                }
+
+                alert("Thank you, " + fname + "! Redirecting to the thank you page.");
+                window.location.href = "thankyou_final.html";
+            });
+
+            document.getElementById("button1").addEventListener("click", function () {
+                document.getElementById("donationForm").reset();
+            });
+        });
+    </script>
+</body>
+</html>
